@@ -1,31 +1,5 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  get serverController => null;
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'ATL HARVEST',
-      initialRoute: '/',
-      theme: ThemeData(
-        brightness: Brightness.light,
-        primaryColor: Colors.green[800],
-      ),
-      onGenerateRoute: (RouteSettings settings) {
-        return MaterialPageRoute(builder: (BuildContext context) {
-          switch (settings.name) {
-            case "/":
-          }
-          // ignore: prefer_const_constructors
-          return LoginPage(serverController, context);
-        });
-      },
-    );
-  }
-}
-
 class LoginPage extends StatefulWidget {
   const LoginPage(serverController, BuildContext context, {Key? key})
       : super(key: key);
