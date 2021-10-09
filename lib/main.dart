@@ -1,4 +1,4 @@
-import 'package:atl_harvest_movil/views/login_page.dart';
+import 'package:atl_harvest_movil/views/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'ATL HARVEST',
-      home: LoginPage(serverController, context),
+      // ignore: prefer_const_constructors
+      home: HomePage(),
     );
   }
 }

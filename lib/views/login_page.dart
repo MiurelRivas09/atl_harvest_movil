@@ -29,7 +29,6 @@ class _LoginPageState extends State<LoginPage> {
             ),
             child: Image.network(
               "https://www.pinclipart.com/picdir/big/573-5736105_sprinkler-repair-company-logo-tatuaje-gota-de-agua.png",
-              color: Colors.white,
             ),
           ),
           Transform.translate(
@@ -40,7 +39,8 @@ class _LoginPageState extends State<LoginPage> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  color: Colors.green[100],
+                  elevation: 40,
+                  color: Colors.blue[100],
                   margin: const EdgeInsets.only(
                       left: 20, right: 20, top: 260, bottom: 20),
                   child: Padding(
